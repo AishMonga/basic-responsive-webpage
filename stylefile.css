@@ -1,0 +1,56 @@
+#container{
+    background-color: goldenrod;
+    width: 960px;
+    margin: auto;
+}
+img{
+    height: 300px;
+    width: 960px;
+}
+#left{
+    background-color: tomato;
+    width: 700px;
+    float: left;
+    /* height: 100px; */
+}
+#right{
+    background-color: teal;
+    width: 260px;
+    float: left;
+    /* height: 100px; */
+}
+
+@media screen and (max-width : 959px) {
+    #container{
+        width: 100%;
+    }
+    #left{
+        width: 70%;
+    }
+    #right{
+        width: 30%;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 640px){
+    #left{
+        width: 100%;
+    }
+    #right{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width : 320px){
+    #container{
+        width: 320px;   
+    }
+    body{
+        background-color: cadetblue;
+        /* color: #fff; */
+    }
+}
